@@ -119,7 +119,12 @@ function drawCircularVisualizer(
     ctx.save();
     ctx.translate(250, 250);
     ctx.rotate(i * 7.22);
-    ctx.fillStyle = "black";
+
+    const r = barHeight * Math.random(0.5, 2);
+    const g = barHeight * Math.random(0.5, 2);
+    const b = barHeight * Math.random(0.5, 2);
+    ctx.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+    // ctx.fillStyle = "black";
     ctx.fillRect(0, 0, barWidth, barHeight);
     x += barWidth;
     ctx.restore();
