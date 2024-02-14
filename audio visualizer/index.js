@@ -1,4 +1,4 @@
-const numberOfBars = 64;
+const numberOfBars = 256;
 window.addEventListener("load", function () {
   const container = document.getElementById("container");
   const canvas = document.getElementById("canvas");
