@@ -138,14 +138,14 @@ function drawCircularVisualizer(
     ctx.save();
     let x = Math.sin((i * Math.PI) / 180);
     let y = Math.cos((i * Math.PI) / 180);
-    
+
     ctx.translate(canvas.width / 2 + x, canvas.height / 2);
     ctx.rotate(i + (Math.PI * 2) / bufferLength);
 
     const hue = i * 0.6 + 200;
     ctx.strokeStyle = "hsl(" + hue + ",100%, 50%)";
 
-    const barWidth = Math.random() * 10 + 1; 
+    const barWidth = Math.random() * 10 + 1;
     const r = barHeight * Math.random(0.5, 2);
     const g = barHeight * Math.random(0.5, 2);
     const b = barHeight * Math.random(0.5, 2);
